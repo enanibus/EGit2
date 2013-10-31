@@ -47,5 +47,9 @@ public class NumeroEnteroTest {
         this.numero.decrementar();
         assertEquals(-1, numero.getValor());
     }
-
+    
+    @Test
+    public void testCambiarSigno() {
+        assertEquals(this.numero.cambiarSigno(), this.numero.getValor()*-1);
+    }
 }
